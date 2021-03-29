@@ -1,0 +1,111 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页,
+		
+		{
+			"path": "pages/main/main",
+			"style": {
+				"navigationBarTitleText": "重点车辆登记",
+				"navigationBarBackgroundColor": "#06f"
+				// "navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#06f",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#06f",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/verify",
+			"style": {
+				"navigationBarTitleText": "信息详情",
+				"navigationBarBackgroundColor": "#06f"
+			}
+		},
+		{
+			"path": "pages/user/search",
+			"style": {
+				"navigationBarTitleText": "查询信息",
+				"navigationBarBackgroundColor": "#06f"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pagesA",
+			"pages": [
+				{
+					"path": "plane/plane",
+					"style": {
+						"navigationBarTitleText": "方案下发",
+						"navigationBarBackgroundColor": "#06f"
+					}
+				},
+				{
+					"path": "device/device",
+					"style": {
+						"navigationBarTitleText": "设备信息",
+						"navigationBarBackgroundColor": "#06f",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "video/video",
+					"style": {
+						"navigationBarTitleText": "视频设备",
+						"navigationBarBackgroundColor": "#06f"
+					}
+				},
+				{
+					"path": "frog/frog",
+					"style": {
+						"navigationBarTitleText": "雾灯设备",
+						"navigationBarBackgroundColor": "#06f"
+					}
+				},
+				{
+					"path": "meteo/meteo",
+					"style": {
+						"navigationBarTitleText": "能见度设备",
+						"navigationBarBackgroundColor": "#06f"
+					}
+				},
+				{
+					"path": "video/videoPreview",
+					"style": {
+						"navigationBarTitleText": "视频预览",
+						"navigationBarBackgroundColor": "#06f"
+					}
+				}
+			]
+		}
+	],
+	"permission": {
+		"scope.userLocation": {
+			"desc": "你的位置信息将用于小程序位置接口的效果展示" // 高速公路行驶持续后台定位
+		}
+	},
+	"preloadRule": {
+		"pagesA/plane/plane": {
+			"network": "all",
+			"packages": [
+				"__APP__"
+			]
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#0faeff",
+		"backgroundColor": "#fbf9fe"
+	}
+}
